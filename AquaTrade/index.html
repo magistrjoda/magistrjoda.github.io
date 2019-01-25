@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AquaTrade</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+</head>
+<body>
+ <div id="content">
+<img src="images/logo.gif" class="logo">
+
+ <div class="menu">
+   <div class="mb1"><a href="http://aquatrade.store"><b>Главная</b></a></div>
+   <div class="mb2"><a href="http://aquatrade.store/catalog.php"><b>Каталог</b></a></div>
+   <div class="mb3"><a href="http://aquatrade.store/aboutus.html"><b>О компании</b></a></div>
+   <div class="mb4"><a href="http://aquatrade.store/contacts.html"><b>Контакты</b></a></div>
+ </div>
+
+ <div class="info_index"></div>
+
+  <div class="slider">
+   <div class="slide">
+     <div class="number"><p>1/3</p></div>
+     <img src="images/1.jpg">
+     <div class="text"><p>Картридж</p></div>
+   </div>
+
+   <div class="slide">
+     <div class="number"><p>2/3</p></div>
+     <img src="images/2.jpg">
+     <div class="text"><p>Мембрана</p></div>
+   </div>
+
+   <div class="slide">
+     <div class="number"><p>3/3</p></div>
+     <img src="images/3.jpg"">
+     <div class="text"><p>Пост-фильтр</p></div>
+   </div>
+   <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+   <a class="next" onclick="plusSlide(1)">&#10095</a>
+     <div class="dots">
+  <span class="dot" onclick="chooseSlide(1)"></span>
+  <span class="dot" onclick="chooseSlide(2)"></span>
+  <span class="dot" onclick="chooseSlide(3)"></span>
+  </div>
+  </div>
+
+</div>
+
+<div class="hrefToText"  onclick="obsv(1);">
+  <h6>Обратная связь</h6>
+</div>
+<div class="hrefToTextActive"  onclick="obsv(2);">
+  <h6>&#10006;</h6>
+</div>
+
+<div class="ObSvActive">
+  <h5>Есть вопрос?<br>
+  Свяжитесь с нами по нормеру +380507407600, e-mail info@aquatrade.store или оставьте сообщение здесь!</h5>
+  <form action="server/mail.php" name="ObSvForm" method="post">
+   Ваше имя:<br>
+   <input type="text" name="name" placeholder="Иван"><br><br>
+   Ваш e-mail:<br>
+   <input type="email" name="mail" placeholder="example@gmail.com"><br><br>
+   Ваше сообщение:<br>
+   <textarea placeholder="Здравствуйте! ..." name="text"></textarea><br><br>
+   <input type="hidden" name="keyMail" value="VXGEWvgefuj2wk">
+   <input type="submit" name="ObSvSubmit">
+    
+  </form>
+</div>
+
+
+<script type="text/javascript" src="scrypt.js"></script>
+
+</body>
+</html>
